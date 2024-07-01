@@ -19,13 +19,10 @@ const App = () => {
       const isExist = repos.find(repo => repo.id === data.id);
 
       if(!isExist) {
-
           setRepos(prev => [...prev, data]);
           setCurrentRepo('');
           return;
-        
       }
-
     } else {
       alert('Repositório não encontrado');
     }
